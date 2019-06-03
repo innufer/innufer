@@ -1,0 +1,52 @@
+body {
+    max-width: 1200px;
+    margin: auto;
+    font-family: "Open Sans";
+}
+
+header {
+    text-align: center;
+    background-image: url("images/header.jpg");
+    background-position: 0 52%;
+}
+
+header h4 {
+    font-size: 3.5em;
+    color: white;
+    margin: 0;
+    padding: 0em 0 1em 0;
+}
+
+header h3 {
+    font-size: 2em;
+    color: white;
+    margin: 0;
+    padding: 1em 0;
+}
+
+h2 {
+    font-size: 1em;
+    color: rgb(65, 63, 63);
+    margin: 0;
+}
+
+.europan img {
+    border: 2px solid rgb(185, 182, 182);
+    border-radius: 50%;
+}
+
+.inndentität img {
+    border: 2px solid rgb(185, 182, 182);
+    border-radius: 50%;
+}
+
+.karte img {
+    border: 2px solid rgb(185, 182, 182);
+    border-radius: 50%;
+}
+
+.autoren img {
+    border: 2px solid rgb(185, 182, 182);
+    border-radius: 50%;
+}
+
