@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>Medigo Green, Project Image</title>
+	<title>InnUfer</title>
     <meta name="keywords" content="">
 	<meta name="description" content="">
     <meta name="author" content="templatemo">
@@ -24,8 +24,19 @@
 	<!-- JavaScripts -->
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	
 
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+	<!-- Leaflet Karte-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+	integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+	crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+
+   <script defer src="js/leaflet.js"></script>
 
 </head>
 <body>
@@ -116,9 +127,8 @@
 	<div class="container">	
 		<div class="row project-single">
 			<div class="col-md-8">
-				<div class="project-img">
-					<img src="images/includes/projectimage1.jpg" alt="Project Image 1">
-				</div> <!-- /.project-img -->
+				<div class="project-img" id="map">
+				</div><!-- /.Karte -->
 			</div> <!-- /.col-md-8 -->
 			<div class="col-md-4">
 				<div class="project-info">
