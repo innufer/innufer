@@ -1,6 +1,3 @@
-let test = "Hallo Welt";
-console.log(test);
-
 let karte = L.map("map");
 
 const kartenLayer = {
@@ -66,7 +63,26 @@ const layerControl = L.control.layers({
 
 kartenLayer.bmapgrau.addTo(karte);
 
-karte.setView([48.208333, 16.373056], 12);
+/*FullScreen*/
+
+karte.addControl(new L.Control.Fullscreen());
+
+const aoigruppe = L.featureGroup().addTo(karte);
+layerControl.addOverlay(aoigruppe, "Naherholungsstätten");
+
+for (let aoi of AOI) { //let kann überschireben weren!
+    let aoipin = L.marker(
+        [aoi.lat, aoi.lng]
+    ).addTo(aoigruppe);
+    aoipin.bindPopup(
+        `<h5> ${aoi.ort}</h5>
+            <p> Adresse: ${aoi.adresse}</p>`
+    )
+    //console.log(aoi);
+
+} //Für jedes von diesen Elementen in AOI soll 1 Pin an der Stelle lat und lng für diese variable aoi gesetzt werden
+
+karte.fitBounds(aoigruppe.getBounds());
 
 /*MiniMap*/
 
@@ -79,6 +95,6 @@ new L.Control.MiniMap(
     }
 ).addTo(karte);
 
-/*FullScreen*/
 
-karte.addControl(new L.Control.Fullscreen());
+
+

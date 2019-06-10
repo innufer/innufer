@@ -1,4 +1,3 @@
-
 const AOI = [
 	  {
 	    "OBJECTID": 1,
@@ -218,4 +217,4 @@ const AOI = [
 	    "lat": 47.272102,
 "icon": "beachvolleyball" /* slackline, fitness, fußball */
 	  },
-]
+];
