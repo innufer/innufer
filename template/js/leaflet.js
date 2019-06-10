@@ -67,12 +67,19 @@ kartenLayer.bmapgrau.addTo(karte);
 
 karte.addControl(new L.Control.Fullscreen());
 
+const sonnenschirm = L.icon({
+    iconUrl: 'icons/icon-sonnenschirm.png',
+    iconSize: [36, 36]
+});
+
 const aoigruppe = L.featureGroup().addTo(karte);
 layerControl.addOverlay(aoigruppe, "Naherholungsstätten");
 
 for (let aoi of AOI) { //let kann überschireben weren!
     let aoipin = L.marker(
-        [aoi.lat, aoi.lng]
+        [aoi.lat, aoi.lng], {
+            icon: sonnenschirm
+        }
     ).addTo(aoigruppe);
     aoipin.bindPopup(
         `<h5> ${aoi.ort}</h5>
@@ -81,6 +88,7 @@ for (let aoi of AOI) { //let kann überschireben weren!
     //console.log(aoi);
 
 } //Für jedes von diesen Elementen in AOI soll 1 Pin an der Stelle lat und lng für diese variable aoi gesetzt werden
+
 
 karte.fitBounds(aoigruppe.getBounds());
 
@@ -94,7 +102,3 @@ new L.Control.MiniMap(
         toggleDisplay: true
     }
 ).addTo(karte);
-
-
-
-
