@@ -67,6 +67,7 @@ kartenLayer.bmapgrau.addTo(karte);
 
 karte.addControl(new L.Control.Fullscreen());
 
+/* Naherholungsstätten*/
 const sonnenschirm = L.icon({
     iconUrl: 'icons/icon-sonnenschirm.png',
     iconSize: [36, 36]
