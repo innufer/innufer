@@ -24,6 +24,8 @@
 	<!-- JavaScripts -->
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+
+	<script defer src="js/leaflet.js"></script>
 	
 
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -36,7 +38,13 @@
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
 
-   <script defer src="js/leaflet.js"></script>
+	<!-- Leaflet: MiniMap-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.js"></script>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.min.css" rel="stylesheet" />
+
+   	<!-- Leaflet: FullScreen-->
+   <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+   <link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -124,7 +132,7 @@
 		</div> <!-- /.parallax-overlay -->
 	</div> <!-- /.pageTitle -->
 
-	<div class="container">	
+	<div class="container kartenbox">	
 		<div class="row project-single">
 			<div class="col-md-8">
 				<div class="project-img" id="map">
@@ -132,13 +140,12 @@
 			</div> <!-- /.col-md-8 -->
 			<div class="col-md-4">
 				<div class="project-info">
-					<span class="subtitle">Subtitle Goes here</span>
-					<h3 class="project-title">Project Image Post Format</h3>
-					<p class="description">Sed consequat lobortis risus, in rutrum arcu tristique eget. Etiam accumsan lectus quis cursus porta.<br><br>Nam convallis neque nec magna malesuada dictum. Aliquam commodo erat non tellus porta imperdiet sit amet eu lacus.</p>
+					<span class="subtitle">Schau dich um!</span>
+					<h3 class="project-title">Naherholungsstätten am Inn</h3>
+					<p class="description">Am Inn finden sich zahlreiche Orte zum Verweilen, Sporteln und Genießen. Die zahlreichen Naherholungsstätten sind in der Karte zu finden.</p>
 					<ul class="meta-post">
-						<li><span>Date:</span>February 2084</li>
-						<li><span>Skills:</span>Branding, Illustration</li>
-						<li><span>URL:</span><a href="#">www.company.com</a></li>
+						<li><span>Stand:</span>Juni 2019</li>
+						<li><span>Daten:</span><a href="#">www.company.com</a></li>
 					</ul>
 				</div> <!-- /.project-info -->
 			</div> <!-- /.col-md-4 -->
@@ -149,7 +156,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-offset-2 col-md-8">
-					<p class="larger-text">Interested to hire us? Go ahead and talk with us on the <a href="contact.html">contact page</a>. We'll be pleased to answer you within a few hours.</p>
+					<p class="larger-text">Da fehlt noch was?  Dann schick uns deinen Vorschlag über das <a href="contact.html">Kontaktformular</a>. Vielleicht findest du bald auch deinen Geheimtipp auf der Karte.</p>
 				</div> <!-- /.col-md-8 -->
 			</div> <!-- /.row -->
 		</div> <!-- /.container -->
@@ -232,27 +239,28 @@
 	</div> <!-- /.related-projects -->
 
 	<footer class="site-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<nav class="footer-nav clearfix">
-						<ul class="footer-menu">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="portfolio.html">Portfolio</a></li>
-							<li><a href="blog.html">Blog Posts</a></li>
-							<li><a href="archives.html">Shortcodes</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul> <!-- /.footer-menu -->
-					</nav> <!-- /.footer-nav -->
-				</div> <!-- /.col-md-12 -->
-			</div> <!-- /.row -->
-			<div class="row">
-				<div class="col-md-12">
-					<p class="copyright-text">Copyright &copy; 2084 Company Name</p>
-				</div> <!-- /.col-md-12 -->
-			</div> <!-- /.row -->
-		</div> <!-- /.container -->
-	</footer> <!-- /.site-footer -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="footer-nav clearfix">
+							<ul class="footer-menu">
+								<li><a href="index.html">Start</a></li>
+								<li><a href="portfolio.html">Europan</a></li>
+								<li><a href="blog.html">Inndentität</a></li>
+								<li><a href="project-image.html">Interaktive Karte</a></li>
+								<li><a href="contact.html">Team</a></li>
+							</ul> <!-- /.footer-menu -->
+						</nav> <!-- /.footer-nav -->
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+				<div class="row">
+					<div class="col-md-12">
+						<p class="copyright-text">Copyright &copy; 2019 Team InnUfer 
+						| Design: templatemo</p>
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</footer> <!-- /.site-footer -->
 
 	<!-- Scripts -->
 	<script src="js/min/plugins.min.js"></script>

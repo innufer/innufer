@@ -1,3 +1,6 @@
+let test = "Hallo Welt";
+console.log(test);
+
 let karte = L.map("map");
 
 const kartenLayer = {
@@ -62,3 +65,20 @@ const layerControl = L.control.layers({
 }).addTo(karte);
 
 kartenLayer.bmapgrau.addTo(karte);
+
+karte.setView([48.208333, 16.373056], 12);
+
+/*MiniMap*/
+
+new L.Control.MiniMap(
+    L.tileLayer("https://{s}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{z}/{y}/{x}.png", {
+        subdomains: ["maps", "maps1", "maps2", "maps3", "maps4"],
+    }), {
+        zoomLevelOffset: -4,
+        toggleDisplay: true
+    }
+).addTo(karte);
+
+/*FullScreen*/
+
+karte.addControl(new L.Control.Fullscreen());
