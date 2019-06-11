@@ -2,11 +2,11 @@ const AOI = [{
 		"OBJECTID": 1,
 		"ort": "Kranebitten (Grünes Band)",
 		"adresse": "Kranebitten Allee",
-		"typ": ["Fussball", "Klettern", "Skaten","Fitness","Tischtennis"],
+		"typ": ["Fussball", "Klettern", "Skaten","Fitness","Tischtennis","Basketball","Slackline",""],
 		"gruppe": "Sport",
 		"lng": 11.326352,
 		"lat": 47.264974,
-		"icon": "fußball", /*+ Basketball, Slackline, Klettern, Fitness, Tischtennis, hundepark*/
+		"icon": "fußball", /*+ hundepark*/
 		"bild": "images/aoi/test.jpg"
 	},
 	{
@@ -42,11 +42,11 @@ const AOI = [{
 		"OBJECTID": 5,
 		"ort": "Pulverturm",
 		"adresse": "Inntalradweg - Pulverturm",
-		"typ": ["Skate"],
+		"typ": ["Skate","Basketball","Slackline","Beachvolleyball","Fussball"],
 		"gruppe": "Sport",
 		"lng": 11.355904,
 		"lat": 47.255843,
-		"icon": "skate" /* +basketball, slackline, beachvolleyball, fußball */
+		"icon": "skate"
 	},
 	{
 		"OBJECTID": 6,
@@ -71,11 +71,11 @@ const AOI = [{
 		"OBJECTID": 8,
 		"ort": "Prandtauer Ufer",
 		"adresse": "Prandtauerufer",
-		"typ": ["Tischtennis"],
+		"typ": ["Tischtennis","Basketball","Spielplatz"],
 		"gruppe": "Sport",
 		"lng": 11.380457,
 		"lat": 47.262284,
-		"icon": "tischtennis" /* +basketball, spielplatz, */
+		"icon": "tischtennis"
 	},
 	{
 		"OBJECTID": 9,
@@ -101,11 +101,11 @@ const AOI = [{
 		"OBJECTID": 11,
 		"ort": "Innpromenade",
 		"adresse": "Franz-Gschnitzer-Promenade",
-		"typ": ["Tischtennis"],
+		"typ": ["Tischtennis","Spielplatz"],
 		"gruppe": "Spielplatz",
 		"lng": 11.381702,
 		"lat": 47.261571,
-		"icon": "tischtennis" /*  + spielplatz */
+		"icon": "tischtennis"
 	},
 	{
 		"OBJECTID": 12,
@@ -131,11 +131,11 @@ const AOI = [{
 		"OBJECTID": 14,
 		"ort": "Waltherpark",
 		"adresse": "Vogelweide",
-		"typ": ["Naherholung"],
+		"typ": ["Naherholung","Spielplatz","Basketball","Fussball"],
 		"gruppe": "Naherholung",
 		"lng": 11.391566,
 		"lat": 47.270084,
-		"icon": "sonnenschirm" /* spielplatz, basketball, fußball */
+		"icon": "sonnenschirm"
 	},
 	{
 		"OBJECTID": 15,
@@ -171,11 +171,11 @@ const AOI = [{
 		"OBJECTID": 18,
 		"ort": "Huttererpark",
 		"adresse": "Anni-Kraus-Weg",
-		"typ": ["Spielplatz"],
+		"typ": ["Spielplatz","Fitness"],
 		"gruppe": "Spielplatz",
 		"lng": 11.401041,
 		"lat": 47.278321,
-		"icon": "spielplatz" /* fitness */
+		"icon": "spielplatz"
 	},
 	{
 		"OBJECTID": 19,
@@ -201,20 +201,20 @@ const AOI = [{
 		"OBJECTID": 21,
 		"ort": "Reichenaupark",
 		"adresse": "Reichenauer Straße",
-		"typ": ["Skate"],
+		"typ": ["Skate","Volleyball","Basketball","Tischtennis","Klettern","Fussball"],
 		"gruppe": "Sport",
 		"lng": 11.427619,
 		"lat": 47.274766,
-		"icon": "skate" /* volleyball, basketball, tischtennis, klettern, fußball  */
+		"icon": "skate"
 	},
 	{
 		"OBJECTID": 22,
 		"ort": "O-Dorf",
 		"adresse": "An-der-Lan-Straße",
-		"typ": ["Beachvolleyball"],
+		"typ": ["Beachvolleyball","Slackline","Fitness","Fussball"],
 		"gruppe": "Sport",
 		"lng": 11.437988,
 		"lat": 47.272102,
-		"icon": "beachvolleyball" /* slackline, fitness, fußball */
+		"icon": "beachvolleyball"
 	},
 ];
