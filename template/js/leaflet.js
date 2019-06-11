@@ -68,23 +68,39 @@ kartenLayer.bmapgrau.addTo(karte);
 karte.addControl(new L.Control.Fullscreen());
 
 /* Naherholungsstätten*/
-const sonnenschirm = L.icon({
-    iconUrl: 'icons/icon-sonnenschirm.png',
-    iconSize: [36, 36]
-});
+
 
 const aoigruppe = L.featureGroup().addTo(karte);
 layerControl.addOverlay(aoigruppe, "Naherholungsstätten");
 
 for (let aoi of AOI) { //let kann überschireben weren!
+    markup = ""
+    for (let i = 0; i < aoi.typ.length; i++) {
+        markup += `<img src="icons/${aoi.typ[i]}.png">`
+        console.log(markup);
+    }
+
+    const marker = L.divIcon({
+        html: markup,
+        className: "ciaoderweil",
+        //iconUrl: 'icons/naherholung.png',
+        iconSize: [36, 36]
+    });
     let aoipin = L.marker(
         [aoi.lat, aoi.lng], {
-            icon: sonnenschirm
+            icon: marker,
+            riseOnHover: true
         }
     ).addTo(aoigruppe);
+    var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p>` + `<img src=${aoi.bild}>`;
+   /*  if (`${aoi.bild}`){
+        return `<img src=${aoi.bild}>`;
+    } else {
+        return "";
+    }; */
+   
     aoipin.bindPopup(
-        `<h5> ${aoi.ort}</h5>
-            <p> Adresse: ${aoi.adresse}</p>`
+        custompopup
     )
     //console.log(aoi);
 

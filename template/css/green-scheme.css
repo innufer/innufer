@@ -1385,3 +1385,13 @@ border: 1px solid gray;
 .kartenbox {
   width: 80vw;
 }
+
+.icon{
+  fill-opacity: 0;
+  border-style: solid;
+  border-width: 0;
+}
+
+.leaflet-marker-icon.selectedMarker{
+  background-color: #84c333;
+}
