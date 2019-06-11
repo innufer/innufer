@@ -72,6 +72,7 @@ karte.addControl(new L.Control.Fullscreen());
 
 const naherhol_gruppe = L.featureGroup().addTo(karte);
 layerControl.addOverlay(naherhol_gruppe, "Naherholungsstätten");
+layerControl.addOverlay(sport_gruppe, "Sportstätten");
 
 for (let aoi of AOI) { //let kann überschireben weren!
     if (aoi.gruppe == "Naherholung") {
@@ -94,23 +95,56 @@ for (let aoi of AOI) { //let kann überschireben weren!
                 riseOnHover: true
             }
 
-
-
         ).addTo(naherhol_gruppe);
-    
 
 
-    var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p>` + `<img src=${aoi.bild}>`;
-    /*  if (`${aoi.bild}`){
-         return `<img src=${aoi.bild}>`;
-     } else {
-         return "";
-     }; */
+        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p>` + `<img src=${aoi.bild}>`;
+        /*  if (`${aoi.bild}`){
+             return `<img src=${aoi.bild}>`;
+         } else {
+             return "";
+         }; */
 
-    aoipin.bindPopup(
-        custompopup
-    )
+        aoipin.bindPopup(
+            custompopup
+        )
     }
+
+    if (aoi.gruppe == "Sport") {
+
+
+        markup = ""
+        for (let i = 0; i < aoi.typ.length; i++) {
+            markup += `<img src="icons/${aoi.typ[i]}.png">`
+        }
+
+        const marker = L.divIcon({
+            html: markup,
+            className: "ciaoderweil",
+            iconSize: [36, 36]
+        });
+
+        let aoipin = L.marker(
+            [aoi.lat, aoi.lng], {
+                icon: marker,
+                riseOnHover: true
+            }
+
+        ).addTo(sport_gruppe);
+
+
+        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p>` + `<img src=${aoi.bild}>`;
+        /*  if (`${aoi.bild}`){
+             return `<img src=${aoi.bild}>`;
+         } else {
+             return "";
+         }; */
+
+        aoipin.bindPopup(
+            custompopup
+        )
+    }
+
 
 } //Für jedes von diesen Elementen in AOI soll 1 Pin an der Stelle lat und lng für diese variable aoi gesetzt werden
 
