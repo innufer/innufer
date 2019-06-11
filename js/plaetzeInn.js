@@ -2,11 +2,11 @@ const AOI = [{
 		"OBJECTID": 1,
 		"ort": "Kranebitten (Grünes Band)",
 		"adresse": "Kranebitten Allee",
-		"typ": ["Fussball", "Klettern", "Skaten","Fitness","Tischtennis","Basketball","Slackline",""],
+		"typ": ["Fussball", "Klettern", "Skaten","Fitness","Tischtennis","Basketball","Slackline","Hundepark"],
 		"gruppe": "Sport",
 		"lng": 11.326352,
 		"lat": 47.264974,
-		"icon": "fußball", /*+ hundepark*/
+		"icon": "fußball"
 		"bild": "images/aoi/test.jpg"
 	},
 	{
@@ -17,7 +17,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.328901,
 		"lat": 47.259157,
-		"icon": "sonnenschirm" /* (Sonnenschirm icon?) */
+		"icon": "sonnenschirm" 
 	},
 	{
 		"OBJECTID": 3,
@@ -36,7 +36,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.354094,
 		"lat": 47.255374,
-		"icon": "sonnenschirm" /* (Sonnenschirm icon?) */
+		"icon": "sonnenschirm"
 	},
 	{
 		"OBJECTID": 5,
