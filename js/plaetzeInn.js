@@ -6,7 +6,7 @@ const AOI = [{
 		"gruppe": "Sport",
 		"lng": 11.326352,
 		"lat": 47.264974,
-		"icon": "fußball"
+		"icon": "fußball",
 		"bild": "images/aoi/test.jpg"
 	},
 	{
