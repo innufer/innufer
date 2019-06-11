@@ -2,7 +2,7 @@ const AOI = [{
 		"OBJECTID": 1,
 		"ort": "Kranebitten (Grünes Band)",
 		"adresse": "Kranebitten Allee",
-		"typ": "Fußball",
+		"typ": ["Fussball", "Klettern", "Skaten","Fitness","Tischtennis"],
 		"gruppe": "Sport",
 		"lng": 11.326352,
 		"lat": 47.264974,
