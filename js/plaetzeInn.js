@@ -18,6 +18,7 @@ const AOI = [{
 		"lng": 11.328901,
 		"lat": 47.259157,
 		"icon": "sonnenschirm" 
+		"bild": "images/inn/innauenkrane.jpg"
 	},
 	{
 		"OBJECTID": 3,
@@ -27,6 +28,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.330395,
 		"lat": 47.25639,
+		"bild": "images/inn/innauenvoels.jpg"
 	},
 	{
 		"OBJECTID": 4,
@@ -37,6 +39,7 @@ const AOI = [{
 		"lng": 11.354094,
 		"lat": 47.255374,
 		"icon": "sonnenschirm"
+		"bild": "images/inn/stromhauspulverturm.jpg"
 	},
 	{
 		"OBJECTID": 5,
@@ -47,6 +50,7 @@ const AOI = [{
 		"lng": 11.355904,
 		"lat": 47.255843,
 		"icon": "skate"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 6,
@@ -57,6 +61,7 @@ const AOI = [{
 		"lng": 11.365035,
 		"lat": 47.254069,
 		"icon": "spielplatz"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 7,
@@ -66,6 +71,7 @@ const AOI = [{
 		"gruppe": "Tier",
 		"lng": 11.376568,
 		"lat": 47.257611,
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 8,
@@ -76,6 +82,7 @@ const AOI = [{
 		"lng": 11.380457,
 		"lat": 47.262284,
 		"icon": "tischtennis"
+		"bild": "images/inn/prandtauerufer.jpg"
 	},
 	{
 		"OBJECTID": 9,
@@ -86,6 +93,7 @@ const AOI = [{
 		"lng": 11.381841,
 		"lat": 47.263713,
 		"icon": "fitness"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 10,
@@ -96,6 +104,7 @@ const AOI = [{
 		"lng": 11.382539,
 		"lat": 47.264433,
 		"icon": "slackline"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 11,
@@ -106,6 +115,7 @@ const AOI = [{
 		"lng": 11.381702,
 		"lat": 47.261571,
 		"icon": "tischtennis"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 12,
@@ -116,6 +126,7 @@ const AOI = [{
 		"lng": 11.383874,
 		"lat": 47.264145,
 		"icon": "sonnenschirm"
+		"bild": "images/inn/universitaet.jpg"
 	},
 	{
 		"OBJECTID": 13,
@@ -126,6 +137,7 @@ const AOI = [{
 		"lng": 11.385539,
 		"lat": 47.266607,
 		"icon": "yoga"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 14,
@@ -136,6 +148,7 @@ const AOI = [{
 		"lng": 11.391566,
 		"lat": 47.270084,
 		"icon": "sonnenschirm"
+		"bild": "images/inn/waltherpark.jpg"
 	},
 	{
 		"OBJECTID": 15,
@@ -146,6 +159,7 @@ const AOI = [{
 		"lng": 11.39497,
 		"lat": 47.272223,
 		"icon": "slackline"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 16,
@@ -156,6 +170,7 @@ const AOI = [{
 		"lng": 11.39497,
 		"lat": 47.273795,
 		"icon": "sonnenschirm"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 17,
@@ -166,6 +181,7 @@ const AOI = [{
 		"lng": 11.398381,
 		"lat": 47.27676,
 		"icon": "sonnenschirm"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 18,
@@ -176,6 +192,7 @@ const AOI = [{
 		"lng": 11.401041,
 		"lat": 47.278321,
 		"icon": "spielplatz"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 19,
@@ -186,6 +203,7 @@ const AOI = [{
 		"lng": 11.410826,
 		"lat": 47.279507,
 		"icon": "sonnenschirm"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 20,
@@ -196,6 +214,7 @@ const AOI = [{
 		"lng": 11.417007,
 		"lat": 47.278119,
 		"icon": "sonnenschirm"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 21,
@@ -206,6 +225,7 @@ const AOI = [{
 		"lng": 11.427619,
 		"lat": 47.274766,
 		"icon": "skate"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 22,
@@ -216,5 +236,6 @@ const AOI = [{
 		"lng": 11.437988,
 		"lat": 47.272102,
 		"icon": "beachvolleyball"
+		"bild": "images/inn/.jpg"
 	},
 ];
