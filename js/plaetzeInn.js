@@ -225,7 +225,7 @@ const AOI = [{
 		"lng": 11.427619,
 		"lat": 47.274766,
 		"icon": "skate",
-		"bild": "images/inn/.jpg"
+		"bild": "images/inn/reichenau.jpg"
 	},
 	{
 		"OBJECTID": 22,
