@@ -704,6 +704,7 @@ blockquote {
   background: #63bc63;
   height: 100%;
   position: relative;
+  opacity: 0.8;
 }
 .thumb-post:hover .overlay {
   opacity: 1;
