@@ -104,7 +104,7 @@ const AOI = [{
 		"lng": 11.382539,
 		"lat": 47.264433,
 		"icon": "slackline",
-		"bild": "images/inn/.jpg"
+		"bild": "images/inn/uni_slackline.jpg"
 	},
 	{
 		"OBJECTID": 11,
@@ -170,7 +170,7 @@ const AOI = [{
 		"lng": 11.39497,
 		"lat": 47.273795,
 		"icon": "sonnenschirm",
-		"bild": "images/inn/.jpg"
+		"bild": "images/inn/emilesteg.jpg"
 	},
 	{
 		"OBJECTID": 17,
@@ -181,7 +181,7 @@ const AOI = [{
 		"lng": 11.398381,
 		"lat": 47.27676,
 		"icon": "sonnenschirm",
-		"bild": "images/inn/.jpg"
+		"bild": "images/inn/loewenhaus.jpg"
 	},
 	{
 		"OBJECTID": 18,
@@ -192,7 +192,7 @@ const AOI = [{
 		"lng": 11.401041,
 		"lat": 47.278321,
 		"icon": "spielplatz",
-		"bild": "images/inn/.jpg"
+		"bild": "images/inn/huttererpark.jpg"
 	},
 	{
 		"OBJECTID": 19,
@@ -203,7 +203,7 @@ const AOI = [{
 		"lng": 11.410826,
 		"lat": 47.279507,
 		"icon": "sonnenschirm",
-		"bild": "images/inn/.jpg"
+		"bild": "images/inn/saggen.jpg"
 	},
 	{
 		"OBJECTID": 20,
@@ -214,7 +214,7 @@ const AOI = [{
 		"lng": 11.417007,
 		"lat": 47.278119,
 		"icon": "sonnenschirm",
-		"bild": "images/inn/.jpg"
+		"bild": "images/inn/sillmuendung.jpg"
 	},
 	{
 		"OBJECTID": 21,
@@ -225,7 +225,7 @@ const AOI = [{
 		"lng": 11.427619,
 		"lat": 47.274766,
 		"icon": "skate",
-		"bild": "images/inn/.jpg"
+		"bild": "images/inn/reichenau.jpg"
 	},
 	{
 		"OBJECTID": 22,
@@ -236,6 +236,6 @@ const AOI = [{
 		"lng": 11.437988,
 		"lat": 47.272102,
 		"icon": "beachvolleyball",
-		"bild": "images/inn/.jpg"
+		"bild": "images/inn/odorf.jpg"
 	},
 ];
