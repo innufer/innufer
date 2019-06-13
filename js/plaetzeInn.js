@@ -17,7 +17,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.328901,
 		"lat": 47.259157,
-		"icon": "sonnenschirm" 
+		"icon": "sonnenschirm", 
 		"bild": "images/inn/innauenkrane.jpg"
 	},
 	{
@@ -38,7 +38,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.354094,
 		"lat": 47.255374,
-		"icon": "sonnenschirm"
+		"icon": "sonnenschirm",
 		"bild": "images/inn/stromhauspulverturm.jpg"
 	},
 	{
@@ -49,7 +49,7 @@ const AOI = [{
 		"gruppe": "Sport",
 		"lng": 11.355904,
 		"lat": 47.255843,
-		"icon": "skate"
+		"icon": "skate",
 		"bild": "images/inn/.jpg"
 	},
 	{
@@ -60,7 +60,7 @@ const AOI = [{
 		"gruppe": "Spielplatz",
 		"lng": 11.365035,
 		"lat": 47.254069,
-		"icon": "spielplatz"
+		"icon": "spielplatz",
 		"bild": "images/inn/.jpg"
 	},
 	{
@@ -81,7 +81,7 @@ const AOI = [{
 		"gruppe": "Sport",
 		"lng": 11.380457,
 		"lat": 47.262284,
-		"icon": "tischtennis"
+		"icon": "tischtennis",
 		"bild": "images/inn/prandtauerufer.jpg"
 	},
 	{
@@ -92,7 +92,7 @@ const AOI = [{
 		"gruppe": "Sport",
 		"lng": 11.381841,
 		"lat": 47.263713,
-		"icon": "fitness"
+		"icon": "fitness",
 		"bild": "images/inn/.jpg"
 	},
 	{
@@ -103,7 +103,7 @@ const AOI = [{
 		"gruppe": "Sport",
 		"lng": 11.382539,
 		"lat": 47.264433,
-		"icon": "slackline"
+		"icon": "slackline",
 		"bild": "images/inn/.jpg"
 	},
 	{
@@ -114,7 +114,7 @@ const AOI = [{
 		"gruppe": "Spielplatz",
 		"lng": 11.381702,
 		"lat": 47.261571,
-		"icon": "tischtennis"
+		"icon": "tischtennis",
 		"bild": "images/inn/.jpg"
 	},
 	{
@@ -125,7 +125,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.383874,
 		"lat": 47.264145,
-		"icon": "sonnenschirm"
+		"icon": "sonnenschirm",
 		"bild": "images/inn/universitaet.jpg"
 	},
 	{
@@ -136,7 +136,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.385539,
 		"lat": 47.266607,
-		"icon": "yoga"
+		"icon": "yoga",
 		"bild": "images/inn/.jpg"
 	},
 	{
@@ -169,7 +169,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.39497,
 		"lat": 47.273795,
-		"icon": "sonnenschirm"
+		"icon": "sonnenschirm",
 		"bild": "images/inn/.jpg"
 	},
 	{
@@ -180,7 +180,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.398381,
 		"lat": 47.27676,
-		"icon": "sonnenschirm"
+		"icon": "sonnenschirm",
 		"bild": "images/inn/.jpg"
 	},
 	{
@@ -191,7 +191,7 @@ const AOI = [{
 		"gruppe": "Spielplatz",
 		"lng": 11.401041,
 		"lat": 47.278321,
-		"icon": "spielplatz"
+		"icon": "spielplatz",
 		"bild": "images/inn/.jpg"
 	},
 	{
@@ -202,7 +202,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.410826,
 		"lat": 47.279507,
-		"icon": "sonnenschirm"
+		"icon": "sonnenschirm",
 		"bild": "images/inn/.jpg"
 	},
 	{
@@ -213,7 +213,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.417007,
 		"lat": 47.278119,
-		"icon": "sonnenschirm"
+		"icon": "sonnenschirm",
 		"bild": "images/inn/.jpg"
 	},
 	{
@@ -224,7 +224,7 @@ const AOI = [{
 		"gruppe": "Sport",
 		"lng": 11.427619,
 		"lat": 47.274766,
-		"icon": "skate"
+		"icon": "skate",
 		"bild": "images/inn/.jpg"
 	},
 	{
@@ -235,7 +235,7 @@ const AOI = [{
 		"gruppe": "Sport",
 		"lng": 11.437988,
 		"lat": 47.272102,
-		"icon": "beachvolleyball"
+		"icon": "beachvolleyball",
 		"bild": "images/inn/.jpg"
 	},
 ];
