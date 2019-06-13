@@ -53,6 +53,17 @@ const AOI = [{
 		"bild": "images/inn/.jpg"
 	},
 	{
+		"OBJECTID": 55,
+		"ort": "Pulverturm",
+		"adresse": "Inntalradweg - Pulverturm",
+		"typ": ["Hundepark"],
+		"gruppe": "Tier",
+		"lng": 11.357315,
+		"lat": 47.255484,
+		"icon": "skate",
+		"bild": "images/inn/.jpg"
+	},
+	{
 		"OBJECTID": 6,
 		"ort": "Spielplatz – Dr.Stumpfstraße",
 		"adresse": "Dr.Stumpfstraße",
@@ -67,7 +78,7 @@ const AOI = [{
 		"OBJECTID": 7,
 		"ort": "Arthur-Haidl-Promenade",
 		"adresse": " Arthur-Haidl-Promenade ",
-		"typ": ["Hundespielplatz"],
+		"typ": ["hundepark"],
 		"gruppe": "Tier",
 		"lng": 11.376568,
 		"lat": 47.257611,
@@ -151,7 +162,7 @@ const AOI = [{
 		"bild": "images/inn/waltherpark.jpg"
 	},
 	{
-		"OBJECTID": 14,
+		"OBJECTID": 144,
 		"ort": "Waltherpark",
 		"adresse": "Vogelweide",
 		"typ": ["Basketball","Fussball"],
