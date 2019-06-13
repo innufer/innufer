@@ -147,7 +147,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.391566,
 		"lat": 47.270084,
-		"icon": "sonnenschirm"
+		"icon": "sonnenschirm",
 		"bild": "images/inn/waltherpark.jpg"
 	},
 	{
@@ -158,7 +158,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.39497,
 		"lat": 47.272223,
-		"icon": "slackline"
+		"icon": "slackline",
 		"bild": "images/inn/.jpg"
 	},
 	{

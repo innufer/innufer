@@ -71,6 +71,7 @@ karte.addControl(new L.Control.Fullscreen());
 
 
 const naherhol_gruppe = L.featureGroup().addTo(karte);
+const sport_gruppe = L.featureGroup().addTo(karte);
 layerControl.addOverlay(naherhol_gruppe, "Naherholungsstätten");
 layerControl.addOverlay(sport_gruppe, "Sportstätten");
 
