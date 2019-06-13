@@ -17,7 +17,7 @@ const AOI = [{
 		"gruppe": "Naherholung",
 		"lng": 11.328901,
 		"lat": 47.259157,
-		"icon": "sonnenschirm" 
+		"icon": "sonnenschirm"
 	},
 	{
 		"OBJECTID": 3,
