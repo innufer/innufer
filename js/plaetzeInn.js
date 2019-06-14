@@ -253,7 +253,7 @@ const AOI = [{
 		"OBJECTID": 22,
 		"ort": "O-Dorf",
 		"adresse": "An-der-Lan-Straße",
-		"typ": ["Beachvolleyball","Slackline","Fitness","Fussball"],
+		"typ": ["Volleyball","Slackline","Fitness","Fussball"],
 		"gruppe": "Sport",
 		"lng": 11.437988,
 		"lat": 47.272102,
