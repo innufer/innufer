@@ -87,31 +87,78 @@ for (let aoi of AOI) { //let kann überschireben weren!
             markup += `<img src="icons/${aoi.typ[i]}.png">`
         }
 
-        const marker = L.divIcon({
+
+        const marker1 = L.divIcon({
+            html: `<img src=images/status.gif>`,
+            className: "ciaoderweil",
+            iconSize: [36, 36]
+        });
+
+        const marker2 = L.divIcon({
             html: markup,
             className: "ciaoderweil",
             iconSize: [36, 36]
         });
 
+        /*const marker = function(feature,naherhol_gruppe)
+                {
+                naherhol_gruppe.on("mouseover",function(e){
+                    aoipin.setIcon(marker2)
+                });
+                naherhol_gruppe.on("mouseout",function(e){
+                    aoipin.setIcon(marker1)
+                });
+                };*/
+
+
+
         let aoipin = L.marker(
             [aoi.lat, aoi.lng], {
-                icon: marker,
+                icon: marker1,
                 riseOnHover: true
-            }
+            },
 
-        ).addTo(naherhol_gruppe);
+
+        );
+
+        var aoifun = function (aoipin) {
+            aoipin.on("mouseover", function (ev) {
+                ev.target.setIcon(marker2);
+            });
+            console.log(aoipin);
+            aoipin.on("mouseout", function (ev) {
+                ev.target.setIcon(marker1);
+            });
+        }
+            aoipin.addTo(naherhol_gruppe);
 
 
         let bild = ""
+        let bildUrl = ""
         if (aoi.bild) {
-            bild = `<img src=${aoi.bild}>`
+            bildUrl = `<img src="${aoi.bild}">`
+            bild = `<div class="overlay">
+            <div class="overlay-inner" style="position: relative;">
+                <div class="portfolio-expand" style = "right: 10px; top: 10px; width: 20px; height: 20px;">
+                    <a class="fancybox" href="${aoi.bild}" title="${aoi.ort}" style = "line-height: 20px;">
+                        <i class="fa fa-expand"></i>
+                    </a>
+                </div>
+                ${bildUrl}
+            </div>
+    
+        </div>`
+
         }
+
         //console.log(bild);
         var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p> ${bild}`;
 
         aoipin.bindPopup(
             custompopup
         )
+
+
     }
 
     if (aoi.gruppe == "Sport") {
@@ -151,13 +198,11 @@ for (let aoi of AOI) { //let kann überschireben weren!
             </div>
     
         </div>`
-        console.log(bild);
 
         }
 
         //console.log(bild);
-        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p> ${bild}
-`;
+        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p> ${bild}`;
 
         aoipin.bindPopup(
             custompopup
@@ -187,9 +232,23 @@ for (let aoi of AOI) { //let kann überschireben weren!
         ).addTo(tier_gruppe);
 
         let bild = ""
+        let bildUrl = ""
         if (aoi.bild) {
-            bild = `<img src=${aoi.bild}>`
+            bildUrl = `<img src="${aoi.bild}">`
+            bild = `<div class="overlay">
+            <div class="overlay-inner" style="position: relative;">
+                <div class="portfolio-expand" style = "right: 10px; top: 10px; width: 20px; height: 20px;">
+                    <a class="fancybox" href="${aoi.bild}" title="${aoi.ort}" style = "line-height: 20px;">
+                        <i class="fa fa-expand"></i>
+                    </a>
+                </div>
+                ${bildUrl}
+            </div>
+    
+        </div>`
+
         }
+
         //console.log(bild);
         var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p> ${bild}`;
 
