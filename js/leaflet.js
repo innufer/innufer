@@ -70,31 +70,41 @@ karte.addControl(new L.Control.Fullscreen());
 /* Naherholungsstätten*/
 
 
-const naherhol_gruppe = L.markerClusterGroup().addTo(karte);
-const sport_gruppe = L.markerClusterGroup().addTo(karte);
-const tier_gruppe = L.markerClusterGroup().addTo(karte);
+const naherhol_gruppe = L.markerClusterGroup()//.addTo(karte);
+const sport_gruppe = L.markerClusterGroup()//.addTo(karte);
+const tier_gruppe = L.markerClusterGroup()//.addTo(karte);
 layerControl.addOverlay(naherhol_gruppe, "Naherholungsstätten");
 layerControl.addOverlay(sport_gruppe, "Sportstätten");
 layerControl.addOverlay(tier_gruppe, "Tier");
 
+const testgruppe=L.markerClusterGroup().addTo(karte);
+layerControl.addOverlay(testgruppe, "test");
+
 
 for (let aoi of AOI) { //let kann überschireben weren!
-    if (aoi.gruppe == "Naherholung") {
+    if (aoi.gruppe == "Sport") {
 
-
+        markupsingle = ""
         markup = ""
         for (let i = 0; i < aoi.typ.length; i++) {
-            markup += `<img src="icons/${aoi.typ[i]}.png">`
+            L.marker([aoi.lat, aoi.lng], {
+                riseOnHover: true
+            }).addTo(testgruppe);
+console.log(i,aoi.typ[i])
+            markup += `<img class="angeboticon" src="icons/${aoi.typ[i]}.png">`
+            if(i==0){
+                markupsingle = `<img src=images/status.gif>`
+            }
         }
 
 
-        const marker1 = L.divIcon({
-            html: `<img src=images/status.gif>`,
+        const markersingle = L.divIcon({
+            html: markupsingle,
             className: "ciaoderweil",
             iconSize: [36, 36]
         });
 
-        const marker2 = L.divIcon({
+        const markerall = L.divIcon({
             html: markup,
             className: "ciaoderweil",
             iconSize: [36, 36]
@@ -114,23 +124,22 @@ for (let aoi of AOI) { //let kann überschireben weren!
 
         let aoipin = L.marker(
             [aoi.lat, aoi.lng], {
-                icon: marker1,
+                icon: markersingle,
                 riseOnHover: true
             },
-
-
-        );
+        ).addTo(naherhol_gruppe);
 
         var aoifun = function (aoipin) {
             aoipin.on("mouseover", function (ev) {
-                ev.target.setIcon(marker2);
+                ev.target._icon.innerHTML=markup;
             });
-            console.log(aoipin);
+
             aoipin.on("mouseout", function (ev) {
-                ev.target.setIcon(marker1);
+                ev.target._icon.innerHTML=markupsingle;
+                console.log(markupsingle);
             });
         }
-            aoipin.addTo(naherhol_gruppe);
+        aoifun(aoipin);
 
 
         let bild = ""

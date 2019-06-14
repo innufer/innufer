@@ -1396,3 +1396,7 @@ border: 1px solid gray;
 .leaflet-marker-icon.selectedMarker{
   background-color: #84c333;
 }
+
+.angeboticon{
+  float: left;
+}
