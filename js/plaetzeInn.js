@@ -50,7 +50,7 @@ const AOI = [{
 		"lng": 11.355904,
 		"lat": 47.255843,
 		"icon": "skate",
-		"bild": "images/inn/.jpg"
+		"bild": ""
 	},
 	{
 		"OBJECTID": 55,
@@ -61,7 +61,7 @@ const AOI = [{
 		"lng": 11.357315,
 		"lat": 47.255484,
 		"icon": "skate",
-		"bild": "images/inn/.jpg"
+		"bild": ""
 	},
 	{
 		"OBJECTID": 6,
@@ -72,7 +72,7 @@ const AOI = [{
 		"lng": 11.365035,
 		"lat": 47.254069,
 		"icon": "spielplatz",
-		"bild": "images/inn/.jpg"
+		"bild": ""
 	},
 	{
 		"OBJECTID": 7,
@@ -82,7 +82,7 @@ const AOI = [{
 		"gruppe": "Tier",
 		"lng": 11.376568,
 		"lat": 47.257611,
-		"bild": "images/inn/.jpg"
+		"bild": ""
 	},
 	{
 		"OBJECTID": 8,
@@ -104,7 +104,7 @@ const AOI = [{
 		"lng": 11.381841,
 		"lat": 47.263713,
 		"icon": "fitness",
-		"bild": "images/inn/.jpg"
+		"bild": ""
 	},
 	{
 		"OBJECTID": 10,
@@ -126,7 +126,7 @@ const AOI = [{
 		"lng": 11.381702,
 		"lat": 47.261571,
 		"icon": "tischtennis",
-		"bild": "images/inn/.jpg"
+		"bild": ""
 	},
 	{
 		"OBJECTID": 12,
@@ -148,7 +148,7 @@ const AOI = [{
 		"lng": 11.385539,
 		"lat": 47.266607,
 		"icon": "yoga",
-		"bild": "images/inn/.jpg"
+		"bild": ""
 	},
 	{
 		"OBJECTID": 14,
@@ -181,7 +181,7 @@ const AOI = [{
 		"lng": 11.39497,
 		"lat": 47.272223,
 		"icon": "slackline",
-		"bild": "images/inn/.jpg"
+		"bild": ""
 	},
 	{
 		"OBJECTID": 16,

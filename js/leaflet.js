@@ -102,12 +102,12 @@ for (let aoi of AOI) { //let kann überschireben weren!
         ).addTo(naherhol_gruppe);
 
 
-        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p>` + `<img src=${aoi.bild}>`;
-        /*  if (`${aoi.bild}`){
-             return `<img src=${aoi.bild}>`;
-         } else {
-             return "";
-         }; */
+        let bild = ""
+        if (aoi.bild) {
+            bild = `<img src=${aoi.bild}>`
+        }
+        //console.log(bild);
+        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p> ${bild}`;
 
         aoipin.bindPopup(
             custompopup
@@ -136,13 +136,28 @@ for (let aoi of AOI) { //let kann überschireben weren!
 
         ).addTo(sport_gruppe);
 
+        let bild = ""
+        let bildUrl = ""
+        if (aoi.bild) {
+            bildUrl = `<img src="${aoi.bild}">`
+            bild = `<div class="overlay">
+            <div class="overlay-inner" style="position: relative;">
+                <div class="portfolio-expand" style = "right: 10px; top: 10px; width: 20px; height: 20px;">
+                    <a class="fancybox" href="${aoi.bild}" title="${aoi.ort}" style = "line-height: 20px;">
+                        <i class="fa fa-expand"></i>
+                    </a>
+                </div>
+                ${bildUrl}
+            </div>
+    
+        </div>`
+        console.log(bild);
 
-        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p>` + `<img src=${aoi.bild}>`;
-        /*  if (`${aoi.bild}`){
-             return `<img src=${aoi.bild}>`;
-         } else {
-             return "";
-         }; */
+        }
+
+        //console.log(bild);
+        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p> ${bild}
+`;
 
         aoipin.bindPopup(
             custompopup
@@ -171,19 +186,17 @@ for (let aoi of AOI) { //let kann überschireben weren!
 
         ).addTo(tier_gruppe);
 
-
-        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p>` + `<img src=${aoi.bild}>`;
-        /*  if (`${aoi.bild}`){
-             return `<img src=${aoi.bild}>`;
-         } else {
-             return "";
-         }; */
+        let bild = ""
+        if (aoi.bild) {
+            bild = `<img src=${aoi.bild}>`
+        }
+        //console.log(bild);
+        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p> ${bild}`;
 
         aoipin.bindPopup(
             custompopup
         )
     }
-    console.log(tier_gruppe);
 
 } //Für jedes von diesen Elementen in AOI soll 1 Pin an der Stelle lat und lng für diese variable aoi gesetzt werden
 
