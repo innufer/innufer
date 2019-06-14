@@ -1,4 +1,4 @@
-{
+var  GEOJSON = [{
     "type": "FeatureCollection",
     "features": [{
             "type": "Feature",
@@ -385,4 +385,4 @@
             }
         }
     ]
-}
+}]

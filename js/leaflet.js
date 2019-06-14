@@ -120,15 +120,17 @@ for (let aoi of AOI) { //let kann überschireben weren!
     }
 }
 //Für jedes von diesen Elementen in AOI soll 1 Pin an der Stelle lat und lng für diese variable aoi gesetzt werden
-console.log(sport_gruppe);
+
+var geojson = L.geoJSON(GEOJSON);
+
 
 /*SuchFeld*/
 const suchFeld = new L.Control.Search({
-    layer: sport_gruppe,
+    layer: geojson,
+    propertyName: "name",
     zoom: 17,
     initial: false
 })
-
 karte.addControl(suchFeld);
 
 
