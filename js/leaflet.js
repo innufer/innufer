@@ -70,12 +70,56 @@ karte.addControl(new L.Control.Fullscreen());
 /* Naherholungsstätten*/
 
 
+
 const naherhol_gruppe = L.markerClusterGroup().addTo(karte);
 const sport_gruppe = L.markerClusterGroup().addTo(karte);
 const tier_gruppe = L.markerClusterGroup().addTo(karte);
 layerControl.addOverlay(naherhol_gruppe, "Naherholungsstätten");
 layerControl.addOverlay(sport_gruppe, "Sportstätten");
 layerControl.addOverlay(tier_gruppe, "Tier");
+
+
+
+/*for (let aoi of GEOJSON) { //let kann überschireben weren!
+    for (let i = 0; i < features.properties.typ.length; i++) {
+        let marker = L.marker([aoi.lat, aoi.lng], {
+            icon: L.divIcon({
+                html: `<img src="icons/${aoi.typ[i]}.png">`,
+                className: "ciaoderweil",
+                iconSize: [36, 36]
+            }),
+            riseOnHover: true
+        });
+        let bild = ""
+        let bildUrl = ""
+        if (aoi.bild) {
+            bildUrl = `<img src="${aoi.bild}">`
+            bild = `<div class="overlay">
+            <div class="overlay-inner" style="position: relative;">
+                <div class="portfolio-expand" style = "right: 10px; top: 10px; width: 20px; height: 20px;">
+                    <a class="fancybox" href="${aoi.bild}" title="${aoi.ort}" style = "line-height: 20px;">
+                        <i class="fa fa-expand"></i>
+                    </a>
+                </div>
+                ${bildUrl}
+            </div>
+    
+        </div>`
+
+        }
+        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p> ${bild}`;
+        marker.bindPopup(
+            custompopup
+        )
+        if (aoi.gruppe == "Sport") {
+            marker.addTo(sport_gruppe);
+        } else if (aoi.gruppe == "Naherholung") {
+            marker.addTo(naherhol_gruppe);
+        } else if (aoi.gruppe == "Tier") {
+            marker.addTo(tier_gruppe);
+        }
+    }
+}*/
 
 
 
@@ -117,21 +161,21 @@ for (let aoi of AOI) { //let kann überschireben weren!
         } else if (aoi.gruppe == "Tier") {
             marker.addTo(tier_gruppe);
         }
+
     }
 }
 //Für jedes von diesen Elementen in AOI soll 1 Pin an der Stelle lat und lng für diese variable aoi gesetzt werden
 
-var geojson = L.geoJSON(GEOJSON);
+/*var geojson = L.geoJSON(GEOJSON);
 
-
-/*SuchFeld*/
-const suchFeld = new L.Control.Search({
+SuchFeld
+const suchfeld =  new L.Control.Search({
     layer: geojson,
     propertyName: "name",
     zoom: 17,
     initial: false
 })
-karte.addControl(suchFeld);
+karte.addControl(suchfeld);*/
 
 
 karte.fitBounds(naherhol_gruppe.getBounds());
