@@ -70,18 +70,56 @@ karte.addControl(new L.Control.Fullscreen());
 /* Naherholungsstätten*/
 
 
-const naherhol_gruppe = L.markerClusterGroup()//.addTo(karte);
-const sport_gruppe = L.markerClusterGroup()//.addTo(karte);
-const tier_gruppe = L.markerClusterGroup()//.addTo(karte);
+const naherhol_gruppe = L.markerClusterGroup() //.addTo(karte);
+const sport_gruppe = L.markerClusterGroup() //.addTo(karte);
+const tier_gruppe = L.markerClusterGroup() //.addTo(karte);
 layerControl.addOverlay(naherhol_gruppe, "Naherholungsstätten");
 layerControl.addOverlay(sport_gruppe, "Sportstätten");
 layerControl.addOverlay(tier_gruppe, "Tier");
 
-const testgruppe=L.markerClusterGroup().addTo(karte);
+const testgruppe = L.markerClusterGroup().addTo(karte);
 layerControl.addOverlay(testgruppe, "test");
 
 
 for (let aoi of AOI) { //let kann überschireben weren!
+    for (let i = 0; i < aoi.typ.length; i++) {
+        let marker = L.marker([aoi.lat, aoi.lng], {
+            icon: L.divIcon({
+                html: `<img class="angeboticon" src="icons/${aoi.typ[i]}.png">`,
+                className: "ciaoderweil",
+                iconSize: [36, 36]
+            }),
+            riseOnHover: true
+        });
+        let bild = ""
+        let bildUrl = ""
+        if (aoi.bild) {
+            bildUrl = `<img src="${aoi.bild}">`
+            bild = `<div class="overlay">
+            <div class="overlay-inner" style="position: relative;">
+                <div class="portfolio-expand" style = "right: 10px; top: 10px; width: 20px; height: 20px;">
+                    <a class="fancybox" href="${aoi.bild}" title="${aoi.ort}" style = "line-height: 20px;">
+                        <i class="fa fa-expand"></i>
+                    </a>
+                </div>
+                ${bildUrl}
+            </div>
+    
+        </div>`
+
+        }
+        //console.log(bild);
+        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p> ${bild}`;
+        marker.bindPopup(
+                custompopup
+        )
+        console.log(i, aoi.typ[i]);
+        if (aoi.gruppe == "Sport") {
+            marker.addTo(testgruppe);
+        } else if (aoi.gruppe == "Naherholung") {
+            marker.addTo(naherhol_gruppe);
+        }
+    }
     if (aoi.gruppe == "Sport") {
 
         markupsingle = ""
@@ -90,9 +128,9 @@ for (let aoi of AOI) { //let kann überschireben weren!
             L.marker([aoi.lat, aoi.lng], {
                 riseOnHover: true
             }).addTo(testgruppe);
-console.log(i,aoi.typ[i])
+            console.log(i, aoi.typ[i])
             markup += `<img class="angeboticon" src="icons/${aoi.typ[i]}.png">`
-            if(i==0){
+            if (i == 0) {
                 markupsingle = `<img src=images/status.gif>`
             }
         }
@@ -131,11 +169,11 @@ console.log(i,aoi.typ[i])
 
         var aoifun = function (aoipin) {
             aoipin.on("mouseover", function (ev) {
-                ev.target._icon.innerHTML=markup;
+                ev.target._icon.innerHTML = markup;
             });
 
             aoipin.on("mouseout", function (ev) {
-                ev.target._icon.innerHTML=markupsingle;
+                ev.target._icon.innerHTML = markupsingle;
                 console.log(markupsingle);
             });
         }
