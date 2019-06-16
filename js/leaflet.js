@@ -78,11 +78,14 @@ layerControl.addOverlay(naherhol_gruppe, "Naherholungsstätten");
 layerControl.addOverlay(sport_gruppe, "Sportstätten");
 layerControl.addOverlay(tier_gruppe, "Tier");
 
+/*var jsondaten = $.getJSON("js/innufer_data.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+});
+console.log(jsondaten);
 
-
-/*for (let aoi of GEOJSON) { //let kann überschireben weren!
-    for (let i = 0; i < features.properties.typ.length; i++) {
-        let marker = L.marker([aoi.lat, aoi.lng], {
+for (let infos of jsondata.features) { //let kann überschireben weren!
+    for (let i = 0; i < infos.properties.typ.length; i++) {
+        let marker = L.marker(infos.geometry.coordinates, {
             icon: L.divIcon({
                 html: `<img src="icons/${aoi.typ[i]}.png">`,
                 className: "ciaoderweil",
@@ -90,7 +93,7 @@ layerControl.addOverlay(tier_gruppe, "Tier");
             }),
             riseOnHover: true
         });
-        let bild = ""
+        /*let bild = ""
         let bildUrl = ""
         if (aoi.bild) {
             bildUrl = `<img src="${aoi.bild}">`
@@ -166,8 +169,8 @@ for (let aoi of AOI) { //let kann überschireben weren!
 }
 //Für jedes von diesen Elementen in AOI soll 1 Pin an der Stelle lat und lng für diese variable aoi gesetzt werden
 
-/*var geojson = L.geoJSON(GEOJSON);
 
+/*
 SuchFeld
 const suchfeld =  new L.Control.Search({
     layer: geojson,
