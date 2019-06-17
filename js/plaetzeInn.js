@@ -78,7 +78,7 @@ const AOI = [{
 		"OBJECTID": 7,
 		"ort": "Arthur-Haidl-Promenade",
 		"adresse": " Arthur-Haidl-Promenade ",
-		"typ": ["hundepark"],
+		"typ": ["Hundepark"],
 		"gruppe": "Tier",
 		"lng": 11.376568,
 		"lat": 47.257611,
