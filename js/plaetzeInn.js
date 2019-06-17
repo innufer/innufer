@@ -7,7 +7,7 @@ const AOI = [{
 		"lng": 11.326352,
 		"lat": 47.264974,
 		"icon": "fußball",
-		"bild": "images/aoi/test.jpg"
+		"bild": "images/inn/kranebittenspielplatz.jpg"
 	},
 	{
 		"OBJECTID": 2,
@@ -50,7 +50,7 @@ const AOI = [{
 		"lng": 11.355904,
 		"lat": 47.255843,
 		"icon": "skate",
-		"bild": ""
+		"bild": "images/inn/usi.jpg"
 	},
 	{
 		"OBJECTID": 55,
@@ -60,8 +60,8 @@ const AOI = [{
 		"gruppe": "Tier",
 		"lng": 11.357315,
 		"lat": 47.255484,
-		"icon": "skate",
-		"bild": ""
+		"icon": "hundepark",
+		"bild": "images/inn/pulverturmhund.jpg"
 	},
 	{
 		"OBJECTID": 6,
@@ -72,7 +72,7 @@ const AOI = [{
 		"lng": 11.365035,
 		"lat": 47.254069,
 		"icon": "spielplatz",
-		"bild": ""
+		"bild": "images/inn/drstumpf.jpg"
 	},
 	{
 		"OBJECTID": 7,
@@ -82,7 +82,7 @@ const AOI = [{
 		"gruppe": "Tier",
 		"lng": 11.376568,
 		"lat": 47.257611,
-		"bild": ""
+		"bild": "images/inn/hundearthur.jpg"
 	},
 	{
 		"OBJECTID": 8,
@@ -104,7 +104,7 @@ const AOI = [{
 		"lng": 11.381841,
 		"lat": 47.263713,
 		"icon": "fitness",
-		"bild": ""
+		"bild": "images/inn/fitness.jpg"
 	},
 	{
 		"OBJECTID": 10,
@@ -126,7 +126,7 @@ const AOI = [{
 		"lng": 11.381702,
 		"lat": 47.261571,
 		"icon": "tischtennis",
-		"bild": ""
+		"bild": "images/inn/tischtuniheim.jpg"
 	},
 	{
 		"OBJECTID": 12,
@@ -148,7 +148,7 @@ const AOI = [{
 		"lng": 11.385539,
 		"lat": 47.266607,
 		"icon": "yoga",
-		"bild": ""
+		"bild": "images/inn/luciyoga.jpg"
 	},
 	{
 		"OBJECTID": 14,
@@ -181,7 +181,7 @@ const AOI = [{
 		"lng": 11.39497,
 		"lat": 47.272223,
 		"icon": "slackline",
-		"bild": ""
+		"bild": "images/inn/"
 	},
 	{
 		"OBJECTID": 16,
