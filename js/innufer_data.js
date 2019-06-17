@@ -1,4 +1,4 @@
-{
+const JSON = [{
     "type": "FeatureCollection",
     "features": [{
             "type": "Feature",
@@ -385,4 +385,4 @@
             }
         }
     ]
-}
+}]

@@ -78,51 +78,19 @@ layerControl.addOverlay(naherhol_gruppe, "Naherholungsstätten");
 layerControl.addOverlay(sport_gruppe, "Sportstätten");
 layerControl.addOverlay(tier_gruppe, "Tier");
 
-/*var jsondaten = $.getJSON("js/innufer_data.json", function(json) {
+/*let jsondaten = $.getJSON("js/innufer_data.json", function(json) {
     console.log(json); // this will show the info it in firebug console
 });
-console.log(jsondaten);
+let POI = L.markerClusterGroup();
 
-for (let infos of jsondata.features) { //let kann überschireben weren!
-    for (let i = 0; i < infos.properties.typ.length; i++) {
-        let marker = L.marker(infos.geometry.coordinates, {
-            icon: L.divIcon({
-                html: `<img src="icons/${aoi.typ[i]}.png">`,
-                className: "ciaoderweil",
-                iconSize: [36, 36]
-            }),
-            riseOnHover: true
-        });
-        /*let bild = ""
-        let bildUrl = ""
-        if (aoi.bild) {
-            bildUrl = `<img src="${aoi.bild}">`
-            bild = `<div class="overlay">
-            <div class="overlay-inner" style="position: relative;">
-                <div class="portfolio-expand" style = "right: 10px; top: 10px; width: 20px; height: 20px;">
-                    <a class="fancybox" href="${aoi.bild}" title="${aoi.ort}" style = "line-height: 20px;">
-                        <i class="fa fa-expand"></i>
-                    </a>
-                </div>
-                ${bildUrl}
-            </div>
-    
-        </div>`
+let jsondaten = L.geoJson(JSON, {
+    pointToLayer: makeMarker
+});
 
-        }
-        var custompopup = `<h5> ${aoi.ort}</h5> <p> Adresse: ${aoi.adresse}</p> ${bild}`;
-        marker.bindPopup(
-            custompopup
-        )
-        if (aoi.gruppe == "Sport") {
-            marker.addTo(sport_gruppe);
-        } else if (aoi.gruppe == "Naherholung") {
-            marker.addTo(naherhol_gruppe);
-        } else if (aoi.gruppe == "Tier") {
-            marker.addTo(tier_gruppe);
-        }
-    }
-}*/
+POI.addLayer(jsondaten);
+console.log(POI);*/
+
+
 
 
 
@@ -170,10 +138,9 @@ for (let aoi of AOI) { //let kann überschireben weren!
 //Für jedes von diesen Elementen in AOI soll 1 Pin an der Stelle lat und lng für diese variable aoi gesetzt werden
 
 
-/*
-SuchFeld
-const suchfeld =  new L.Control.Search({
-    layer: geojson,
+
+/*const suchfeld =  new L.Control.Search({
+    layer: jsondaten,
     propertyName: "name",
     zoom: 17,
     initial: false
@@ -181,7 +148,7 @@ const suchfeld =  new L.Control.Search({
 karte.addControl(suchfeld);*/
 
 
-karte.fitBounds(naherhol_gruppe.getBounds());
+karte.fitBounds(sport_gruppe.getBounds());
 
 /*MiniMap*/
 
