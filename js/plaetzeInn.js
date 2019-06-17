@@ -181,7 +181,7 @@ const AOI = [{
 		"lng": 11.39497,
 		"lat": 47.272223,
 		"icon": "slackline",
-		"bild": "images/inn/slackline.jpg"
+		"bild": "images/inn/.jpg"
 	},
 	{
 		"OBJECTID": 16,
