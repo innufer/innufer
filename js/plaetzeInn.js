@@ -61,7 +61,7 @@ const AOI = [{
 		"lng": 11.357315,
 		"lat": 47.255484,
 		"icon": "hundepark",
-		"bild": "images/inn/pulverturmhund.jpg"
+		"bild": "images/inn/Pulverturmhund.jpg"
 	},
 	{
 		"OBJECTID": 6,
@@ -93,7 +93,7 @@ const AOI = [{
 		"lng": 11.380457,
 		"lat": 47.262284,
 		"icon": "tischtennis",
-		"bild": "images/inn/prandtauerufer.jpg"
+		"bild": "images/inn/Prandtauerufer.jpg"
 	},
 	{
 		"OBJECTID": 9,
@@ -137,7 +137,7 @@ const AOI = [{
 		"lng": 11.383874,
 		"lat": 47.264145,
 		"icon": "sonnenschirm",
-		"bild": "images/inn/universitaet.jpg"
+		"bild": "images/inn/Universitaet.jpg"
 	},
 	{
 		"OBJECTID": 13,
@@ -214,7 +214,7 @@ const AOI = [{
 		"lng": 11.401041,
 		"lat": 47.278321,
 		"icon": "spielplatz",
-		"bild": "images/inn/huttererpark.jpg"
+		"bild": "images/inn/Huttererpark.jpg"
 	},
 	{
 		"OBJECTID": 19,
@@ -225,7 +225,7 @@ const AOI = [{
 		"lng": 11.410826,
 		"lat": 47.279507,
 		"icon": "sonnenschirm",
-		"bild": "images/inn/saggen.jpg"
+		"bild": "images/inn/Saggen.jpg"
 	},
 	{
 		"OBJECTID": 20,
@@ -236,7 +236,7 @@ const AOI = [{
 		"lng": 11.417007,
 		"lat": 47.278119,
 		"icon": "sonnenschirm",
-		"bild": "images/inn/sillmuendung.jpg"
+		"bild": "images/inn/Sillmuendung.jpg"
 	},
 	{
 		"OBJECTID": 21,
@@ -258,6 +258,6 @@ const AOI = [{
 		"lng": 11.437988,
 		"lat": 47.272102,
 		"icon": "beachvolleyball",
-		"bild": "images/inn/odorf.jpg"
+		"bild": "images/inn/Odorf.jpg"
 	},
 ];
